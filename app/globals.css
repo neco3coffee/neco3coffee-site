@@ -1,9 +1,12 @@
 :root {
   --max-width: 780px;
   --border-radius: 22px;
+  --z-index-sticky-header: 10;
   --main-background: #1A1E2E;
+  --secondary-background: #2b3047;
   --title-color: #FFFFFF;
   --text-color: #CCCFD9;
+  --gray-color: rgba(228, 232, 250, .55);
   --primary-gradient: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
@@ -17,6 +20,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 body {
