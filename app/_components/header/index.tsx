@@ -6,6 +6,7 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import {useFloating, autoUpdate} from '@floating-ui/react';
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const pathname = usePathname()
@@ -38,7 +39,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/">
-          <div className={styles.logo}></div>
+            <Image
+              src={'/img/profile.jpeg'}
+              alt='profile image'
+              width='30'
+              height='30'
+              className={styles.profileImage}
+            />
         </Link>
         <nav>
           <Link href="/">
