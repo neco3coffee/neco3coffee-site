@@ -6,7 +6,6 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import {useFloating, autoUpdate} from '@floating-ui/react';
 import Link from 'next/link'
-import { link } from 'fs';
 
 export default function Header() {
   const pathname = usePathname()
@@ -38,9 +37,13 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logo}></div>
+        <Link href="/">
+          <div className={styles.logo}></div>
+        </Link>
         <nav>
-          <h2 className={styles.siteName}>neco3coffee</h2>
+          <Link href="/">
+            <h2 className={styles.siteName}>neco3coffee</h2>
+          </Link>
           {pathname !== '/' && <>
             <span>/</span>
             <p>{slashRemovedPathname}</p>
