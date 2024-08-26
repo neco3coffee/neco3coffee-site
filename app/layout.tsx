@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/_components/header";
+import Footer from "@/app/_components/footer"
 import styles from "@/app/layout.module.css";
 
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"]});
@@ -25,6 +26,7 @@ export default function RootLayout({
             {children} 
           </div>
         </main>
+        <Footer />
       </body>
     </html>
   );
