@@ -15,6 +15,7 @@ export default function Home() {
         <div className={styles.gridContainer}>
           <Link href="/notes" className={styles.notesWrapper}>
             <PiNotePencilBold className={styles.noteIcon} />
+            <h4>Notes</h4>
           </Link>
           <Link href="https://x.com/neco3coffee" className={styles.twitterWrapper}>
             <FaTwitter className={styles.twitterIcon} />
