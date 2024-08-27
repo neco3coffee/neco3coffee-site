@@ -38,12 +38,11 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link href="/">
+        <Link href="/" className={styles.profileImageWrapper}>
             <Image
-              src={'/img/profile.jpeg'}
+              src={'/img/profile.PNG'}
               alt='profile image'
-              width='30'
-              height='30'
+              fill
               className={styles.profileImage}
             />
         </Link>
