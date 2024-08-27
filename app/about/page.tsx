@@ -19,7 +19,7 @@ export default function Page() {
         <div className={styles.gridContainer}>
           {likeImageList.map((image) => {
             return (
-              <div className={styles.gridItem}>
+              <div className={styles.gridItem} key={image.src}>
                 <Image
                   src={image.src}
                   fill
