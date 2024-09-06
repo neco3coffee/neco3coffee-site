@@ -17,7 +17,6 @@ export default async function Page() {
     return <h1>No Contents</h1>
   }
 
-  console.log(contents)
   return (
     <>
       <h2 className={styles.title}>Notes</h2>
