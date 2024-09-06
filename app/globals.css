@@ -6,6 +6,7 @@
   --secondary-background: #2b3047;
   --title-color: #FFFFFF;
   --text-color: #CCCFD9;
+  --card-background: #2b3047;
   --gray-color: rgba(228, 232, 250, .55);
   --primary-gradient: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }

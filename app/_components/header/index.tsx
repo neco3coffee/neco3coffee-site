@@ -52,7 +52,7 @@ export default function Header() {
           </Link>
           {pathname !== '/' && <>
             <span>/</span>
-            <p>{slashRemovedPathname}</p>
+            <p>{slashRemovedPathname.includes('notes') ? 'notes' : slashRemovedPathname}</p>
           </>}
           {/* TODO: arrowを表示する */}
           <span 
@@ -80,7 +80,7 @@ export default function Header() {
                         <Link key={navItem.name} href={navItem.href} className={clsx(
                           styles.navItem,
                           {
-                            [styles.navItemActive]: pathname === navItem.href
+                            [styles.navItemActive]: pathname === navItem.href 
                           }
                         )} onClick={toggleMenu}>
                           <h5>{navItem.name}</h5>
