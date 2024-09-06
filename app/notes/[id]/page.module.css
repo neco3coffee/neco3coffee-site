@@ -45,6 +45,10 @@
   line-height: 2rem;
 }
 
+.contentContainer p {
+  min-height: 2rem;
+}
+
 @media (max-width: 700px) {
   .title {
     font-size: 26px;
