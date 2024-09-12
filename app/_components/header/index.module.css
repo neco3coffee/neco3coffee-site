@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-top: 3px;
 }
 
 .downArrow {
