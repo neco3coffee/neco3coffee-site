@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.22",
+    "@next/third-parties": "^14.0.5-canary.59",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "html-react-parser": "^5.1.15",

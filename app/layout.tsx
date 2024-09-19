@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer"
 import styles from "@/app/layout.module.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"]});
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-02ND8D73C0" />
     </html>
   );
 }
