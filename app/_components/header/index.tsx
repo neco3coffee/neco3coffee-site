@@ -25,10 +25,10 @@ export default function Header() {
       name: 'Home',
       href: '/'
     },
-    {
-      name: 'Notes',
-      href: '/notes'
-    },
+    // {
+    //   name: 'Notes',
+    //   href: '/notes'
+    // },
     {
       name: 'About',
       href: '/about'
@@ -55,7 +55,7 @@ export default function Header() {
             <p>{slashRemovedPathname.includes('notes') ? 'notes' : slashRemovedPathname}</p>
           </>}
           {/* TODO: arrowを表示する */}
-          <span 
+          <span
             className={styles.downArrowWrapper}
             ref={refs.setReference}
           >
@@ -64,8 +64,8 @@ export default function Header() {
               {
                 [styles.downArrowOpen]: isMenuOpen
               }
-            )} 
-            onClick={toggleMenu} 
+            )}
+            onClick={toggleMenu}
             />
           </span>
           {
@@ -80,7 +80,7 @@ export default function Header() {
                         <Link key={navItem.name} href={navItem.href} className={clsx(
                           styles.navItem,
                           {
-                            [styles.navItemActive]: pathname === navItem.href 
+                            [styles.navItemActive]: pathname === navItem.href
                           }
                         )} onClick={toggleMenu}>
                           <h5>{navItem.name}</h5>
@@ -93,7 +93,7 @@ export default function Header() {
               </div>
             )
           }
-        </nav> 
+        </nav>
       </div>
     </header>
   )

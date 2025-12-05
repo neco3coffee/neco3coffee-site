@@ -1,4 +1,5 @@
 .fadeUpContainer {
+  margin-top: 30px;
   width: 100%;
   animation: fadeUp 0.5s ease-out;
 }
@@ -16,7 +17,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "areaA areaA areaB"
     "areaA areaA areaC";
   gap: 16px;
@@ -78,7 +79,7 @@
   .gridContainer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "areaA areaA"
       "areaA areaA"
       "areaB areaC";
@@ -94,4 +95,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.workingStatusContainer {
+  width: 100%;
+  position: relative;
 }
