@@ -4,14 +4,9 @@ import Link from "next/link";
 // import { FaTwitter, FaGithub } from "react-icons/fa";
 // import { PiNotePencilBold } from "react-icons/pi";
 import { getDeviceStatus } from "./_lib/swithbotclient";
+import AutoRefresh from "./_components/AutoRefresh/index";
 
 export const dynamic = 'force-dynamic';
-
-export const metadata = {
-  title: "neco3coffee site",
-  description: "this is a site of neco3coffee.",
-  refresh: 15,
-}
 
 
 export default async function Home() {
@@ -19,6 +14,7 @@ export default async function Home() {
 
   return (
     <>
+      <AutoRefresh intervalMs={15000} />
       <div className={styles.fadeUpContainer} style={{ animationDelay: '0.2s' }}>
         <p className={styles.introduceText}>neco3coffee(he/him) is a software developer in Japan.</p>
         <Link href="/about">View image</Link>
