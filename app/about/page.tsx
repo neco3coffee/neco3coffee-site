@@ -13,7 +13,6 @@ export default function Page() {
         <p className={styles.introduceText}>In 2023, I worked as a web application engineer.</p>
         <p className={styles.introduceText}>I am currently working as a front-end developer</p>
       </div> */}
-      <h2 className={styles.outsideOfWorkTitle}>Outside of work</h2>
       <div className={styles.fadeUpContainer} style={{animationDelay: '0.4s'}}>
         <p className={styles.introduceText}>I like the following ...</p>
         <div className={styles.gridContainer}>
