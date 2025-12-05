@@ -7,6 +7,12 @@ import { getDeviceStatus } from "./_lib/swithbotclient";
 
 export const dynamic = 'force-dynamic';
 
+export const metadata = {
+  title: "neco3coffee site",
+  description: "this is a site of neco3coffee.",
+  refresh: 15,
+}
+
 
 export default async function Home() {
   const power = await getDeviceStatus({ deviceId: process.env.DEVICE_ID || "" });
