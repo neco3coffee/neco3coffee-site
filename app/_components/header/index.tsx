@@ -25,10 +25,10 @@ export default function Header() {
       name: 'Home',
       href: '/'
     },
-    // {
-    //   name: 'Notes',
-    //   href: '/notes'
-    // },
+    {
+      name: 'Notes',
+      href: '/notes'
+    },
     {
       name: 'About',
       href: '/about'
