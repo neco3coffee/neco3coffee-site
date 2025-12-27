@@ -91,6 +91,8 @@
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom-color 0.2s;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contentContainer a:hover {
@@ -130,6 +132,10 @@
   border-radius: var(--border-radius);
   overflow-x: auto;
   margin: 1.5rem 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .contentContainer pre code {
@@ -137,6 +143,8 @@
   padding: 0;
   font-size: 0.85em;
   line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .contentContainer table {
